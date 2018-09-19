@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70413E6A-2EC6-46C9-B10A-C3F52D65FA96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WpfBrowserApp4</RootNamespace>
+    <AssemblyName>WpfBrowserApp4</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <EnableSecurityDebugging>true</EnableSecurityDebugging>
+    <Install>False</Install>
+    <StartAction>URL</StartAction>
+    <HostInBrowser>true</HostInBrowser>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <TargetZone>Internet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>True</SignManifests>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Page1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="Content\bootstrap-theme.min.css.map" />
+    <None Include="Content\bootstrap.css.map" />
+    <None Include="Content\bootstrap.min.css.map" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="WpfBrowserApp4_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bootstrap1.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="HTMLPage1.html" />
+    <Content Include="HTMLPage3.html" />
+    <Content Include="SessionStorage.html" />
+    <Resource Include="starproduct\3F7C25A1-63AF-426A-F873-FAA503FAC301.png" />
+    <Resource Include="starproduct\DC0E2F1A-5AF6-E735-7968-7C03ED47D1C2.jpg" />
+    <Resource Include="starproduct\713237A0-43EF-13C1-3549-1B40BB184B7A.jpg" />
+    <Resource Include="starproduct\router.jpg" />
+    <Resource Include="images\995F2CE7-FBAA-8A4D-1C9D-C2DA61954C86.jpg" />
+    <Resource Include="images\7EE01FAE-BDF2-42F1-2FC8-C7143393D636.jpg" />
+    <Resource Include="images\D1266117-F091-A9EE-C3A3-1A4EC31E0EC9.jpg" />
+    <Resource Include="images\39787D52-B11A-B141-C842-188048E43508.jpg" />
+    <Resource Include="images\CDBBBABF-6988-31B6-E398-4AFAC3533C42.jpg" />
+    <Content Include="HTMLPage2.html" />
+    <Resource Include="images\mihome.png" />
+    <Resource Include="images\mihome.jpg" />
+    <Resource Include="navimages\powrbankim\326D4260-357D-CE0A-5435-329A2A1021B5.jpg" />
+    <Resource Include="navimages\powrbankim\D957938E-8863-A822-9747-B04BA2E0F788.jpg" />
+    <Resource Include="navimages\powrbankim\5541D71B-2229-D9BA-B416-C175A9CCCF5E.jpg" />
+    <Resource Include="navimages\mi phones\max2.jpg" />
+    <Resource Include="navimages\mi phones\pms_1504595436.33018559.png" />
+    <Resource Include="navimages\redmi phone\c68002.jpg" />
+    <Resource Include="navimages\redmi phone\B6EA7EDC-7FE6-5BB6-33D8-3E3563FEC8EA.png" />
+    <Resource Include="navimages\mi phones\Mix2-800.jpg" />
+    <Resource Include="navimages\redmi phone\0C9D1F49-C6CF-94D3-01B2-E192E8825C4E.png" />
+    <Resource Include="navimages\redmi phone\pms_1494902213.89073343.jpg" />
+    <Resource Include="navimages\redmi phone\E4B17487-E8D5-B028-793B-93A403A430D7.jpg" />
+    <Resource Include="navimages\audio\speaker 2.jpg" />
+    <Resource Include="navimages\audio\Basic-Matte-Silver.jpg" />
+    <Resource Include="navimages\audio\capsuleear.jpg" />
+    <Resource Include="navimages\audio\prohd800.jpg" />
+    <Resource Include="navimages\audio\earpho.jpg" />
+    <Resource Include="navimages\smartdevice\Mi-Air-Purifier-2.jpg" />
+    <Resource Include="navimages\smartdevice\miband2800.jpg" />
+    <Resource Include="navimages\smartdevice\router3c.jpg" />
+    <Resource Include="navimages\smartdevice\vrplay2.jpg" />
+    <Resource Include="navimages\retailstor\authorizecen.png" />
+    <Resource Include="navimages\retailstor\home.png" />
+    <Resource Include="navimages\support\protect.png" />
+    <Resource Include="navimages\support\sc.png" />
+    <Resource Include="navimages\support\2DFD6168-2318-3BED-59E8-4BF75727F5CD.png" />
+    <Resource Include="navimages\support\9144F426-2DFC-2F3B-C347-387074682160.png" />
+    <Resource Include="productimage\13841963-ABD0-ADC8-5D20-4E875CD86320.jpg" />
+    <Resource Include="productimage\A3C8BC3D-3C3D-6E64-782C-DD723E34D09B.jpg" />
+    <Resource Include="productimage\9833447A-75F4-DE84-AC3D-ED09CD636C04.jpg" />
+    <Content Include="PerviewData.html" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <StartArguments />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WpfBrowserApp4_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A95CD1D4EBF4BC00BD61B267232274F07707D8FE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

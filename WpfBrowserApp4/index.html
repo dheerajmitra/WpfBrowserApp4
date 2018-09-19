@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+
+        .bannerContainer {
+            position: relative;
+        }
+
+        .carousel {
+            position: absolute;
+            top: 0;
+        }
+
+
+        /*.carousel- inner {
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+        }*/
+
+        .navbar {
+            /*position: absolute;*/
+            top: 0px;
+            /*padding-right: 150px;
+            padding-left: 0px;*/
+            z-index: 10;
+            background: transparent;
+            width: 100%;
+            border: transparent;
+        }
+        /*#phone.dropdown-menu {
+            min-width: 100px;
+        }
+        #redmi.dropdown-menu {
+            min-width: 1000px;
+        }*/
+        /*.dropdown-menu {
+            min-width: 1000px;
+        }*/
+        li.dropdown {
+            position: static;
+        }
+
+        .dropdown-menu {
+            width: 100%;
+        }
+
+            .dropdown-menu > li {
+                display: inline-block;
+            }
+
+
+        #login-dp {
+            min-width: 250px;
+            padding: 14px 14px 0;
+            overflow: hidden;
+            background-color: rgba(255,255,255,.8);
+        }
+
+            #login-dp .help-block {
+                font-size: 12px
+            }
+
+            #login-dp .bottom {
+                background-color: rgba(255,255,255,.8);
+                border-top: 1px solid #ddd;
+                clear: both;
+                padding: 14px;
+            }
+
+            #login-dp .social-buttons {
+                margin: 12px 0
+            }
+
+                #login-dp .social-buttons a {
+                    width: 49%;
+                }
+
+            #login-dp .form-group {
+                margin-bottom: 10px;
+            }
+
+        .btn-fb {
+            color: #fff;
+            background-color: #3b5998;
+        }
+
+            .btn-fb:hover {
+                color: #fff;
+                background-color: #496ebc
+            }
+
+        .btn-tw {
+            color: #fff;
+            background-color: #55acee;
+        }
+
+            .btn-tw:hover {
+                color: #fff;
+                background-color: #59b5fa;
+            }
+
+        @media(max-width:768px) {
+            #login-dp {
+                background-color: inherit;
+                color: #fff;
+            }
+
+                #login-dp .bottom {
+                    background-color: inherit;
+                    border-top: 0 none;
+                }
+        }
+
+        .inline-block {
+            display: inline-block;
+            padding-top: 490px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        body {
+            text-align: center;
+            background: #fcfcfa;
+            color: #818078;
+            font-family: Futura, sans-serif;
+        }
+
+        .container {
+            max-width: 50%;
+            margin: 40px auto;
+        }
+
+        h2 {
+            overflow: hidden;
+            text-align: center;
+        }
+
+            h2:before,
+            h2:after {
+                background-color:lightgrey;
+                content: "";
+                display: inline-block;
+                height: 1px;
+                position: center;
+                vertical-align: middle;
+                width: 50%;
+            }
+
+            h2:before {
+                right: 0.5em;
+                margin-left: -50%;
+            }
+
+            h2:after {
+                left: 0.5em;
+                margin-right: -50%;
+            }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+                    $(this).toggleClass('open');
+                }
+            );
+        });</script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="navbar navbar-inverse" role="navigation">
+            <!navbar-inverse is black, navbar-default is grey>
+
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <img src="images/mihome.jpg" />
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">Mi Phones <b class="caret"></b></a>
+                        <ul class="dropdown-menu list-inline" id="#phone">
+
+                            <li><img class="center-block " src="navimages/mi phones/max2.jpg" /><a href="#" class="text-center">Mi Max 2<br /><h6 class="text-center" style="color:orangered">$300</h6></a></li>
+                            <li><img class="center-block" src="navimages/mi phones/pms_1504595436.33018559.png" /><a href="#" class="text-center">Mi A1<br /><h6 class="text-center" style="color:orangered">$290</h6></a></li>
+                            <li><img class="center-block" src="navimages/mi phones/Mix2-800.jpg" /><a href="#" class="text-center">Mi Mix 2 <br /><h6 class="text-center" style="color:orangered">$600</h6></a></li>
+
+
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle " id="#redmi" data-toggle="dropdown">Redmi Phones <b class="caret"></b></a>
+                        <ul class="dropdown-menu list-inline">
+
+                            <li><img class="center-block" src="navimages/redmi phone/0C9D1F49-C6CF-94D3-01B2-E192E8825C4E.png" /><a href="#" class="text-center">Redmi Y1 Lite<br /><h6 class="text-center" style="color:orangered">$160</h6></a></li>
+                            <li><img class="center-block" src="navimages/redmi phone/B6EA7EDC-7FE6-5BB6-33D8-3E3563FEC8EA.png" /><a href="#" class="text-center">Redmi Y1<br /><h6 class="text-center" style="color:orangered">$139</h6></a></li>
+                            <li><img class="center-block" src="navimages/redmi phone/E4B17487-E8D5-B028-793B-93A403A430D7.jpg" /><a href="#" class="text-center">Redmi 5<br /><h6 class="text-center" style="color:orangered">$90</h6></a></li>
+                            <li><img class="center-block" src="navimages/redmi phone/c68002.jpg" /><a href="#" class="text-center">Redmi Note 4><br /><h6 class="text-center" style="color:orangered">$200</h6></a></li>
+                            <li><img class="center-block" src="navimages/redmi phone/pms_1494902213.89073343.jpg" /><a href="#" class="text-center">Redmi 4<br /><h6 class="text-center" style="color:orangered">$100</h6></a></li>
+
+
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">Audio <b class="caret"></b></a>
+                        <ul class="dropdown-menu list-inline">
+
+                            <li><img class="center-block" src="navimages/audio/prohd800.jpg" /><a href="#" class="text-center">Mi In-Ear Headphones Pro HD<br /><h6 style="color:orangered">$75</h6></a></li>
+                            <li><img class="center-block" src="navimages/audio/earpho.jpg" /><a href="#" class="text-center">Mi Noise Cancelling Earphones <br /> (Type-C)<br /><h6 class="text-center" style="color:orangered">$65</h6></a></li>
+                            <li><img class="center-block" src="navimages/audio/capsuleear.jpg" /><a href="#" class="text-center">Mi Capsule Earphones<br /><h6 class="text-center" style="color:orangered">$55</h6></a></li>
+                            <li><img class="center-block" src="navimages/audio/speaker 2.jpg" /><a href="#" class="text-center">Mi Bluetooth Speaker Basic 2<br /><h6 class="text-center" style="color:orangered">$85</h6></a></li>
+                            <li><img class="center-block" src="navimages/audio/Basic-Matte-Silver.jpg" /><a href="#" class="text-center">Mi In-Ear Headphones Basic<br /> Matte<br /><h6 class="text-center" style="color:orangered">$55</h6></a></li>
+
+
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">Smart Devices <b class="caret"></b></a>
+                        <ul class="dropdown-menu list-inline">
+
+                            <li><img class="center-block" src="navimages/smartdevice/Mi-Air-Purifier-2.jpg" /><a href="#" class="text-center">Mi Air Purifier 2<br /><h6 class="text-center" style="color:orangered">$75</h6></a></li>
+                            <li><img class="center-block" src="navimages/smartdevice/miband2800.jpg" /><a href="#" class="text-center">Mi Band - HRX Edition<br /><h6 class="text-center" style="color:orangered">$65</h6></a></li>
+                            <li><img class="center-block" src="navimages/smartdevice/router3c.jpg" /><a href="#" class="text-center">Mi Router 3C<br /><h6 class="text-center" style="color:orangered">$55</h6></a></li>
+                            <li><img class="center-block" src="navimages/smartdevice/vrplay2.jpg" /><a href="#" class="text-center">Mi VR Play 2<br /><h6 class="text-center" style="color:orangered">$55</h6></a></li>
+
+
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">Mi Power Bank <b class="caret"></b></a>
+                        <ul class="dropdown-menu list-inline">
+
+
+                            <li><img class="center-block" src="navimages/powrbankim/326D4260-357D-CE0A-5435-329A2A1021B5.jpg" /><a href="#">10000mAh Mi Power Bank <br />Pro Grey<br /><h6 class="text-center" style="color:orangered">$75</h6></a></li>
+                            <li><img class="center-block" src="navimages/powrbankim/5541D71B-2229-D9BA-B416-C175A9CCCF5E.jpg" /><a href="#">20000mAh Mi Power Bank 2i<br /><br /><h6 class="text-center" style="color:orangered">$65</h6></a></li>
+                            <li><img class="center-block" src="navimages/powrbankim/D957938E-8863-A822-9747-B04BA2E0F788.jpg" /><a href="#">10000mAh Mi Power Bank 2ir <br /><br /><h6 class="text-center" style="color:orangered">$55</h6></a></li>
+
+
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#">Accesories </a>
+
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">Retail Stores <b class="caret"></b></a>
+                        <ul class="dropdown-menu list-inline">
+
+                            <li><img class="center-block" src="navimages/retailstor/authorizecen.png" /><a href="#" class="text-center">Mi Authorized Stores</a></li>
+                            <li><img class="center-block " src="navimages/retailstor/home.png" /><a href="#" class="text-center">/Mi Home</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">Support <b class="caret"></b></a>
+                        <ul class="dropdown-menu list-inline">
+                            <li><img class="center-block" src="navimages/support/protect.png" /><a href="#" class="text-center">Mi Protect</a></li>
+                            <li><img class="center-block" src="navimages/support/sc.png" /><a href="#" class="text-center">Service Center</a></li>
+                            <li><img class="center-block" src="navimages/support/2DFD6168-2318-3BED-59E8-4BF75727F5CD.png" /><a href="#" class="text-center">Customer Care</a></li>
+                            <li><img class="center-block" src="navimages/support/9144F426-2DFC-2F3B-C347-387074682160.png" /><a href="#" class="text-center">Online Help</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Login via
+                                        <div class="social-buttons">
+                                            <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                            <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                        </div>
+                                        or
+                                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                            <div class="form-group"  >
+                                                <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> keep me logged-in
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="bottom text-center">
+                                        New here ? <a href="#"><b>Join Us</b></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-left:0px;padding-right:0px">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+
+            <div class="item active">
+                <a href="#">
+                    <img src="images/CDBBBABF-6988-31B6-E398-4AFAC3533C42.jpg" alt="Los Angeles" style="width:100%;">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="#">
+                    <img src="images/39787D52-B11A-B141-C842-188048E43508.jpg" alt="Chicago" style="width:100%;">
+                </a>
+            </div>
+
+
+            <div class="item">
+                <a href="#">
+                    <img src="images/D1266117-F091-A9EE-C3A3-1A4EC31E0EC9.jpg" alt="New york" style="width:100%;">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="images/7EE01FAE-BDF2-42F1-2FC8-C7143393D636.jpg" alt="New york1" style="width:100%;">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="images/995F2CE7-FBAA-8A4D-1C9D-C2DA61954C86.jpg" alt="New york2" style="width:100%;">
+                </a>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--<div class="sec-hd">
+        <h2 class="sec-title">Star Products</h2>
+    </div>-->
+    <div class="row">
+        <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+            <a href="#">
+                <img src="productimage/13841963-ABD0-ADC8-5D20-4E875CD86320.jpg" class="img-responsive inline-block" />
+            </a>
+            <a href="#">
+                <img src="productimage/9833447A-75F4-DE84-AC3D-ED09CD636C04.jpg" class="img-responsive inline-block" style="padding-left:20px;padding-right:20px" />
+            </a>
+            <a href="#">
+
+                <img src="productimage/A3C8BC3D-3C3D-6E64-782C-DD723E34D09B.jpg" class="img-responsive inline-block" />
+            </a>
+        </div>
+    </div>
+    <h2>STAR PRODUCTS</h2>
+
+
+
+
+    <!--Section: Features v.3-->
+    <section>
+
+        <!--Grid row-->
+        <div class="row pt-2">
+
+            <!--Grid column-->
+            <div class="col-lg-5 mb-r center-on-small-only">
+                <a href="#" style="padding-top:30px;padding-left:70px">
+                    <img src="starproduct/router.jpg" />
+                </a>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-7">
+
+                <!--Grid row-->
+                <div class="row pb-3">
+
+                    <div class="col-lg-6" style="padding-left:135px">
+                        <a href="#"><img src="starproduct/DC0E2F1A-5AF6-E735-7968-7C03ED47D1C2.jpg" /></a>
+
+                    </div>
+
+                    <div class="col-lg-6" style="padding-left:0px">
+                        <a href="#">
+                            <img src="starproduct/713237A0-43EF-13C1-3549-1B40BB184B7A.jpg" />
+                        </a>
+                    </div>
+                </div>
+                <!--Grid row-->
+                <!--Grid row-->
+                <div class="row pb-3">
+
+                    <div class="col-12">
+                        <a href="#" class="col-12" style="padding-left:80px">
+                            <img src="starproduct/3F7C25A1-63AF-426A-F873-FAA503FAC301.png" />
+                        </a>
+                    </div>
+                </div>
+                <!--Grid row-->
+                <!--Grid row-->
+                <!--<div class="row pb-3">
+
+                    <div class="col-12">
+                       <a href="#" class="col-12" style="padding-top:10px;padding-left:70px">
+                        <img src="starproduct/3F7C25A1-63AF-426A-F873-FAA503FAC301.png" />
+                        </a>
+                    </div>
+                </div>-->
+                <!--Grid row-->
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </section>
+    <!--Section: Features v.3-->
+
+    
+</body>
+</html>

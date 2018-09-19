@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WpfBrowserApp4.exe" version="1.0.0.0" publicKeyToken="8533e60ab52f84bd" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WpfBrowserApp4" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="WpfBrowserApp4.exe" parameters="" />
+    <hostInBrowser xmlns="urn:schemas-microsoft-com:asm.v3" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="Internet" Description="Default rights given to Internet applications" ID="Custom" SameSite="site">
+          <IPermission version="1" class="System.Security.Permissions.FileDialogPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Access="Open" />
+          <IPermission UserQuota="1024000" version="1" class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Allowed="ApplicationIsolationByUser" />
+          <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Execution" />
+          <IPermission version="1" class="System.Security.Permissions.UIPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Clipboard="OwnClipboard" Window="SafeTopLevelWindows" />
+          <IPermission version="1" class="System.Drawing.Printing.PrintingPermission, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Level="SafePrinting" />
+          <IPermission version="1" class="System.Security.Permissions.MediaPermission, WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Audio="SafeAudio" Image="SafeImage" Video="SafeVideo" />
+          <IPermission version="1" class="System.Security.Permissions.WebBrowserPermission, WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Level="Safe" />
+        </PermissionSet>
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WpfBrowserApp4.exe" size="938944">
+      <assemblyIdentity name="WpfBrowserApp4" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1rm3WFvaacBhLBdvzBGbizRb6IkJ/OhTjo45nelbi2Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Bootstrap1.html" size="21516">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q9gKEutX29oKgSDzyVga4U9HAbQ1x6uLnJMehVC7Fo4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\bootstrap.css" size="146010">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fmMNkMcjSw3xcp9iuPnku/ryk9kaWgrEbfJfKmdZ45o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\bootstrap.min.css" size="121200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\bootstrap-theme.css" size="26132">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xOpS+e/dER8z72w+qryCieOGysQI8cELAVt3MHG0phY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\bootstrap-theme.min.css" size="23409">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZT4HPpdCOt2lvDkXokHuhJfdOKSPFLzeAJik5U/Q+l4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="fonts\glyphicons-halflings-regular.svg" size="108738">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QvYGWdJlwaPDD5+kKry7Vr1KU69Ng9MW1t16NpA8Q+U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="HTMLPage1.html" size="2328">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wIl/4XSjH/cs3caR7YAw76ZG7iohkZlVa0ZdwFSSwPY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="HTMLPage2.html" size="3897">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O3ujmPtx9Lw5LjyWxhSGY0ehTpjD+SjpINZl1JYy4IA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="HTMLPage3.html" size="1885">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>On1tWo/RdEd3xL42mp4sGM5L140FtvZ6Wtd1l4fcwaY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scripts\bootstrap.js" size="69707">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Cr6N6zNN4bp0OwTQOZ6Z66M2r+2dpy/EwKMCyZ+SOMg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scripts\bootstrap.min.js" size="37045">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scripts\jquery-1.9.1.intellisense.js" size="161599">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iIiYO7o1wOI40WrP728NzuxO68JkiuUHuMP9SgJ0h14=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scripts\jquery-1.9.1.js" size="277981">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>52slO2K9aif6rp290xjMOFBTLp9aObgqxLhzssGVnyY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scripts\jquery-1.9.1.min.js" size="92636">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NC+OMipmgE2vKMc/xf070IUICKfMXUDEpRXrHJNhViA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-A4CSNLQ\dheer" issuerKeyHash="e32b7170700956380c97faa39a772c405194e946" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>763Z8TYfGujCqvyVDmsY+JC9mwA=</DigestValue></Reference></SignedInfo><SignatureValue>TYf50AsYt89xV7ATnfXxpcdhdA53Kx2B64sinrojNNRM7HUMO8lVpOt8BpkZrYblXzLcJw2t6DtwRCfcgAnII1dF+4Jvv/OtOpX0lJ4X8UC49+bE35w9ubxe5tN15NZ2yfbq2+IMh6KDF/HMaJI9y3ll7RHyipzwwurmolm11Ys=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uOpixIDbU7iJV3tCCEs1Ht1F9sfQ5oB2Px6lom5PXuKRkr6WK2LhPoh5RM+Dsj2cEVb1ycd6VykO0Jk8cmVpKB5H3Lhybn1H1K/etijUBiq7fB0mBAb5btrKEPh6ALbHUhOct58GMF52dDey3/a0zBe3U9RZRi2nkOSs5slRL7U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="009bbd90f8186b0e95fcaac2e81a1f36f1d9adef" Description="" Url=""><as:assemblyIdentity name="WpfBrowserApp4.exe" version="1.0.0.0" publicKeyToken="8533e60ab52f84bd" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-A4CSNLQ\dheer</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>DlWBvteXlexAtyiC3G5gSBD6mls=</DigestValue></Reference></SignedInfo><SignatureValue>IluGCOHJsgeEY5OJEGsrfxMAjXcsQZH/ZtQWqFgfKWctLfrZVSOScUrrcO0HyGS+4ApTdqn0Gazb6+Ag0rkWYpUUdeHvdwdfZNIa6S10oOEFDk5tEIlDvlWpBRTD/2Fvv+zCjB6kvpXAW7zQf5X8lqk9mfOXae/06qqf/CuvtBc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uOpixIDbU7iJV3tCCEs1Ht1F9sfQ5oB2Px6lom5PXuKRkr6WK2LhPoh5RM+Dsj2cEVb1ycd6VykO0Jk8cmVpKB5H3Lhybn1H1K/etijUBiq7fB0mBAb5btrKEPh6ALbHUhOct58GMF52dDey3/a0zBe3U9RZRi2nkOSs5slRL7U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQQcygvn1MV6NCNkY+koK55zANBgkqhkiG9w0BAQUFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEEANABDAFMATgBMAFEAXABkAGgAZQBlAHIwHhcNMTgwMjA1MDUwNzE0WhcNMTkwMjA1MTEwNzE0WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEEANABDAFMATgBMAFEAXABkAGgAZQBlAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALjqYsSA21O4iVd7QghLNR7dRfbH0OaAdj8epaJuT17ikZK+liti4T6IeUTPg7I9nBFW9cnHelcpDtCZPHJlaSgeR9y4cm59R9Sv3rYo1AYqu3wdJgQG+W7ayhD4egC2x1ITnLefBjBednQ3st/2tMwXt1PUWUYtp5DkrObJUS+1AgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAsvRbwlzrsRHw5guBJw87C9Q4oITOLjbAXp/A0ffXb5NE7m6pA5osbazj0dW+Pd4cVN+0PYpiN1RTlsKaD2QJ9nqWUa0Sgj1qMt29wP+6E76quHL5SLqP21lR2kSQkZSofgukg6gp4u8vP3anpQe+JjntmBqksfPVY2OTdB7n2XI=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
